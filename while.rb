@@ -1,20 +1,15 @@
-# frozen_string_literal: true
-
-guvenlik = true
-
-while guvenlik
-  puts 'kullanıcı adı giriniz'
-  kullanici_adi = gets.chomp
-  puts 'sifre giriniz'
+guvenlik = false
+until guvenlik
+  puts 'kullanıcı adı oluşturun'
+  kullanici = gets.chomp
+  puts 'kullanıcı adı 3 haneden kısa olamaz' if kullanici.size.to_i < 4
+  puts 'şifre giriniz'
   sifre = gets.chomp
-  if kullanici_adi == 'admin' && sifre == '123456'
-    puts 'giriş yapıldı'
-    guvenlik = false
-  elsif kullanici_adi == 'q' || sifre == 'q'
-    puts 'çıkış komutu algılandı'
-    puts 'çıkış yapılıyor'
-    guvenlik = false
-  else
-    puts 'yanlış kullanıcı adi veya şifre'
+  puts 'şifre 3 haneden kısa olamaz' if sifre.length.to_i < 4
+  if kullanici.length.size.to_i >= 4 && sifre.size.to_i >= 4
+    puts "hoşgeldin #{kullanici}"
+    guvenlik = true
   end
 end
+
+
