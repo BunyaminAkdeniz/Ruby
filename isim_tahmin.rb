@@ -8,7 +8,6 @@ while correct
   puts tahmin
   if tahmin == sayi
     puts "doğru cevap #{tahmin}"
-    correct = false
+    break
   end
 end
-
