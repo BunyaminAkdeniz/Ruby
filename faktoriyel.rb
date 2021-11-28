@@ -1,12 +1,11 @@
-# frozen_string_literal: true
-
+# frozen_string_literal: tru
 puts 'Lütfen faktoriyel almak istediğiniz sayıyı giriniz.'
 elde = 1
 girdi1 = gets.chomp
-if girdi1 == '0'
-  puts '1'
+if girdi1.between?("A","z")
+  puts 'Sadece Sayı'
 elsif girdi1.to_i.zero?
-  puts 'Lütfen bir sayı giriniz'
+  puts '1'
 else
   girdi1 = girdi1.to_i
   until girdi1 == 1
@@ -20,3 +19,6 @@ else
   end
   puts elde
 end
+
+
+
