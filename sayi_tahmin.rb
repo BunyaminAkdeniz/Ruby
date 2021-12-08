@@ -7,7 +7,7 @@ kalan_deneme = 0
 loop do
   case kalan_deneme
   when 0
-    puts 'Tuttuğum sayıyı tahmin et.'
+    puts 'Tuttuğum sayıyı tahmin et. Sayım 1 ile 50 arasında :D'
   when deneme
     puts "Deneme hakkınız kalmadı. Doğru cevap #{sayi}"
     break
@@ -23,3 +23,6 @@ loop do
     break
   end
 end
+exit
+
+sayi = 10
