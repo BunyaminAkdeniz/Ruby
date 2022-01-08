@@ -1,3 +1,0 @@
-ogrenci_listesi = {
-  
-}

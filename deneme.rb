@@ -1,4 +1,3 @@
-exit
 salise = 0 
 saniye = 0
 dakika = 0 
@@ -12,12 +11,11 @@ loop do
       dakika += 1
       saniye = 0 
       salise = 0
-      if dakika == 60
+    if dakika == 60
         saat += 1
         dakika = 0
         saniye = 0 
         salise = 0
-      end
     end
   end
 end

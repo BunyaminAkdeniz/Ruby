@@ -1,4 +1,4 @@
-index = 100000000
+sensibility = 100000000
 odd = []
 sayac = 0
 pi = 0.0
