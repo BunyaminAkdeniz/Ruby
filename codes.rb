@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # SINIFLAR
 # .class metodu değişkenin sınıfnı gösterir
 
@@ -30,6 +32,8 @@ false.class # => FalseClass
 'Merhaba' << ' Dünya' # => Merhabanın sonuna Dünya kelimesini ekler
 
 'Merhaba'.concat('dünya') # => Merhabanın sonuna dünya kelimesini ekler
+
+"Merhaba".split('')
 
 # DÖNGÜLER
 ###################
@@ -143,16 +147,20 @@ end
 
 dizi.reject! { |numara| numara > 100 } # => 100'den küçükleri diziden çıkartır.
 
+dizi.sample # => örneklem Diziden rastgele 1 karakter verir
+# Örnek:  
+Array.new(20) { (("A".."z").to_a + (1..9).to_a).sample}.join  
 # SPACESHİP OPERATÖRÜ
 
 10 <=> 10 # =>  0 döner
 10 <=> 5  # =>  -1 döner
 5  <=> 10 # =>  +1 döner
-5  <=> 'String'  # => nil döner
+5  <=> 'String' # => nil döner
 
-# RAND
+# Integerlar
+10.step(90, 5) #=> 90 a kadar beşer beşer say
 puts rand(3..50) # => 3 ile 50 arasında rastgele sayı döner
 
 # Time.now
 
-#invert
+# invert

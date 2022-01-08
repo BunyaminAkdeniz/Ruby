@@ -1,0 +1,9 @@
+ogrenci_listesi = {
+
+
+
+
+
+
+  
+}

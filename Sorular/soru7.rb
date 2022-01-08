@@ -10,5 +10,4 @@ until a == 0
   dizi << elde
   a -= 1
 end
-
-bolenleri_bul()
+p dizi
