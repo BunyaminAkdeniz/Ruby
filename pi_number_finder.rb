@@ -1,8 +1,10 @@
-sensibility = 100000000
+
+puts 'Pi sayısının hassasiyetini giriniz. Hassiyetiniz büyüdükçe hesaplama süresi artacaktır. Önerilen değer: 10_000 - 100_000_000'
+sensibility = gets.chomp.to_i
 odd = []
 sayac = 0
 pi = 0.0
-index.times { |i| odd << i if i.odd?}
+sensibility.times { |i| odd << i if i.odd?}
 odd.each do |num|
   if sayac.even?
     pi += (4.00 / num)
