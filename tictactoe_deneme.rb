@@ -51,6 +51,15 @@ end
 kazanma_durumlari = [[1, 4, 7], [2, 5, 8], [3, 6, 9], [1, 5, 9], [3, 5, 7], [4, 5, 6], [1, 2, 3], [7, 8, 9]]
 
 until sayac == 100
+  puts
+  puts
+  puts  "#{game_board.values[0]}|#{game_board.values[1]}|#{game_board.values[2]}           1 | 2 | 3"
+  puts  '---|---|---          ---|---|---'
+  puts  "#{game_board.values[3]}|#{game_board.values[4]}|#{game_board.values[5]}   ==>     4 | 5 | 6"
+  puts  '---|---|---          ---|---|---'
+  puts  "#{game_board.values[6]}|#{game_board.values[7]}|#{game_board.values[8]}           7 | 8 | 9"
+  puts
+
   kazanma_durumlari.each do |array|
     case check_win?(game_board, array[0], array[1], array[2])
     when ' x '
@@ -65,14 +74,6 @@ until sayac == 100
       sayac = exit_or_cont(sayac, input)
     end
   end
-  puts
-  puts
-  puts  "#{game_board.values[0]}|#{game_board.values[1]}|#{game_board.values[2]}           1 | 2 | 3"
-  puts  '---|---|---          ---|---|---'
-  puts  "#{game_board.values[3]}|#{game_board.values[4]}|#{game_board.values[5]}   ==>     4 | 5 | 6"
-  puts  '---|---|---          ---|---|---'
-  puts  "#{game_board.values[6]}|#{game_board.values[7]}|#{game_board.values[8]}           7 | 8 | 9"
-  puts
   if sayac < 9
     if (sayac % 2).even?
       puts "Sıra X'de"
