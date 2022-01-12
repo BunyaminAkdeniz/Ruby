@@ -1,6 +1,7 @@
-# 2 asal sayının toplamı biçiminde yazılabilen asal sayılar
+# frozen_string_literal: true
 
-private
+sonuc = []
+
 def asalsayi(sayi)
   b = sayi / 2
   until b == 1
@@ -22,8 +23,9 @@ def asal_sayilari_kumele(sayi)
   asal_sayilar
 end
 
-array = asal_sayilari_kumele(1000)
-sonuc = []
+puts "1'den girdiğiniz sayıya kadar asal sayıların toplamı şeklinde yazılabilen asal sayıları görmek için bir sayı giriniz"
+input = gets.chomp.to_i
+array = asal_sayilari_kumele(input)
 array.each do |asal|
   sonuc << asal if array.include?(asal + 2)
   sonuc.uniq!

@@ -1,15 +1,17 @@
-def sezarin_sifresi(input)
-  newvalue = ''
-  letters = ("a".."z").to_a + ["a".."e"] 
-  letters_upcase = ("A".."Z").to_a + ["A".."E"]
-  input.split('').each_with_index do |letter, index|
-    letter = if letters.find_index(letter).nil?
-      letter = letters_upcase[(letters_upcase.index("A") + 3)]
-    else
-      letter = letters[(letters.find_index(letter)) + 3]
-    end
-    newvalue[index] = letter
-  end
-  newvalue
+# frozen_string_literal: true
+
+sonuc = []
+
+harfler = ('a'..'z').to_a + %w[a b
+                               c] + ('A'..'Z').to_a + %w[A B
+                                                         C] + [' ', ' ', ' ', ' ',
+                                                               ' '] + %w[1 2 3 4 5 6 7 8 9 1 2 3]
+def bul_degistir(harfler, harf)
+  harfler[harfler.find_index(harf) + 3]
 end
-print sezarin_sifresi("merhaba")
+puts 'Sezar ile sifrelemek istediginiz metni giriniz. Turkce karakter kullanmayınız!'
+girdi = gets.chomp
+girdi.split('').each do |harf|
+  sonuc << bul_degistir(harfler, harf)
+end
+puts(sonuc.join)

@@ -1,37 +1,12 @@
+a = [1,2,3,4,5,6,7,8,9]
+puts a.find_index(5)
 
 
-
-exit
-salise = 0 
-saniye = 0
-dakika = 0 
-saat = 0
-loop do 
-  salise += 1
-  puts "#{saat}/#{dakika}/#{saniye}/#{salise}" 
-    salise = 0
-    saniye += 1
-    if saniye == 60
-      dakika += 1
-      saniye = 0 
-      salise = 0
-    if dakika == 60
-        saat += 1
-        dakika = 0
-        saniye = 0 
-        salise = 0
-    end
-  end
-end
-
-exit
-puts 57**2 + 308**2 == 317**2
 exit
 degisken ="merhaba"
 degisken[1] = "c"
 puts degisken
 
-exit
 
 
 gmail_chech_up = /[\w._%+-]+@[\w.-]+\.[a-zA-Z]{2,4}/
