@@ -1,3 +1,7 @@
+
+
+
+exit
 salise = 0 
 saniye = 0
 dakika = 0 
