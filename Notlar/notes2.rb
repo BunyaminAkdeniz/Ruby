@@ -26,6 +26,24 @@ puts yemek_fiyatlari.merge(ogrenci)
 
 # blcok yeild ve block_given?
 
+
+
+
+
+a = Hash.new ('böyle bir karakter yok')
+
+a = {b: 23, c:4}
+
+p a[:d]
+exit
+
+
+
+
+
+
+
+
 def ekrana_yazdir
   puts ''
   puts 'Metodum işeleme başladı '

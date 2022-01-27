@@ -33,7 +33,7 @@ false.class # => FalseClass
 
 'Merhaba'.concat('dünya') # => Merhabanın sonuna dünya kelimesini ekler
 
-"Merhaba".split('')
+"Merhaba asd asd asd asd".split(' ') => 
 
 # DÖNGÜLER
 ###################
@@ -105,7 +105,7 @@ dizi.push(2, 4, 6) # => diziye 2, 4 ve 6 rakamlarını sondan ekler
 
 dizi << [2, 4, 6] # => push ile aynı
 
-dizi.insert(4, 999) # => dizinin 4. indexine "999" sayısını ekler
+dizi.insert(4, '999') # => dizinin 4. indexine "999" sayısını ekler
 
 dizi.pop # => son rakamı siler
 
@@ -164,3 +164,8 @@ puts rand(3..50) # => 3 ile 50 arasında rastgele sayı döner
 # Time.now
 
 # invert
+
+h ={
+  a: 2,
+  b: 4,
+}

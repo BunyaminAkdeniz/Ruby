@@ -47,9 +47,7 @@ def exit_or_cont(sayac, input)
   end
   sayac
 end
-
 kazanma_durumlari = [[1, 4, 7], [2, 5, 8], [3, 6, 9], [1, 5, 9], [3, 5, 7], [4, 5, 6], [1, 2, 3], [7, 8, 9]]
-
 until sayac == 100
   puts
   puts
@@ -59,7 +57,6 @@ until sayac == 100
   puts  '---|---|---          ---|---|---'
   puts  "#{game_board.values[6]}|#{game_board.values[7]}|#{game_board.values[8]}           7 | 8 | 9"
   puts
-
   kazanma_durumlari.each do |array|
     case check_win?(game_board, array[0], array[1], array[2])
     when ' x '
@@ -94,7 +91,5 @@ until sayac == 100
   elsif sayac == 50
     sayac = 0
     game_board = new_game(game_board)
-  elsif sayac == 100
-    break
   end
 end

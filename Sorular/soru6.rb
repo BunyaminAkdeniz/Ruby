@@ -1,4 +1,4 @@
-input = 702
+input = gets.chomp.to_i
 a = 1
 b = 1
 c = input - (a + b)
@@ -13,3 +13,5 @@ until (a**2 + b**2) == c**2
   end
 end
 p "#{a}    #{b}     #{c}"
+
+
