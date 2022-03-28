@@ -23,11 +23,11 @@ def degistir(hash, index, sira)
                 end
 end
 
-def check_win?(hash, asd, bsd, csd)
-  if hash[asd] == '   '
+def check_win?(hash, foo, bar, baz)
+  if hash[foo] == '   '
     false
-  elsif hash[asd] == hash[bsd] && (hash[bsd] == hash[csd])
-    hash[asd]
+  elsif hash[foo] == hash[bar] && (hash[bar] == hash[baz])
+    hash[foo]
   end
 end
 
