@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-
+# Ruby xlsx işlemleri 
 require 'rubyXL'
 require 'rubyXL/convenience_methods/cell'
 require 'rubyXL/convenience_methods/color'
@@ -41,12 +41,7 @@ until worksheet[i].nil?
     i += 1
   end
 end
-puts 'Yapmak istediğiniz işlemi tuşlayınız'
-puts
-puts 'Dosyanızı görüntülemek için 0'
-puts 'Birinci satırı yazdırmak için 1'
-puts 'İkinci satırı yazdırmak için 2'
-puts 'Stunları toplamak için 3 basın'
+
 a = gets.chomp.to_i
 case a
 when 0
