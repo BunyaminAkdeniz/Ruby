@@ -7,7 +7,7 @@ harfler = ('a'..'z').to_a + %w[a b
                                                          C] + [' ', ' ', ' ', ' ',
                                                                ' '] + %w[1 2 3 4 5 6 7 8 9 1 2 3]
 def bul_degistir(harfler, harf)
-  harfler[harfler.find_index(harf) + 3]
+  harfler[harfler.find_index(harf) + 1]
 end
 puts 'Sezar ile sifrelemek istediginiz metni giriniz. Turkce karakter kullanmayınız!'
 girdi = gets.chomp
